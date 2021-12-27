@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E2D0CD23-B28B-416E-B085-0D482EBA3F05}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>timer_lks_1</RootNamespace>
+    <AssemblyName>timer lks 1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CheckIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckIn.Designer.cs">
+      <DependentUpon>CheckIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckOut.Designer.cs">
+      <DependentUpon>CheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainAdmin.Designer.cs">
+      <DependentUpon>MainAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFrontOffice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrontOffice.Designer.cs">
+      <DependentUpon>MainFrontOffice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainLogin.Designer.cs">
+      <DependentUpon>MainLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterEmployee.Designer.cs">
+      <DependentUpon>MasterEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterFD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterFD.Designer.cs">
+      <DependentUpon>MasterFD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterItem.Designer.cs">
+      <DependentUpon>MasterItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterRoom.Designer.cs">
+      <DependentUpon>MasterRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterRoomType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterRoomType.Designer.cs">
+      <DependentUpon>MasterRoomType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportCheckIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportCheckIn.Designer.cs">
+      <DependentUpon>ReportCheckIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportGuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportGuest.Designer.cs">
+      <DependentUpon>ReportGuest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RequestAddItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestAddItem.Designer.cs">
+      <DependentUpon>RequestAddItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reservation.Designer.cs">
+      <DependentUpon>Reservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="timer_lks_1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timer_lks_1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Utils.cs" />
+    <EmbeddedResource Include="MainAdmin.resx">
+      <DependentUpon>MainAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrontOffice.resx">
+      <DependentUpon>MainFrontOffice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainLogin.resx">
+      <DependentUpon>MainLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterEmployee.resx">
+      <DependentUpon>MasterEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="timer_lks_1DataSet.xsc">
+      <DependentUpon>timer_lks_1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="timer_lks_1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timer_lks_1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timer_lks_1DataSet.xss">
+      <DependentUpon>timer_lks_1DataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
